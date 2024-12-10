@@ -1,15 +1,27 @@
 import { Routes } from '@angular/router';
-import { PagesModule } from './pages/pages.module';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/components/login/login.component';
+
 
 
 export const routes: Routes = [
 
-{
-    path:'',
-    loadChildren:()=>import('./pages/pages.module').then(m=>PagesModule)
-},
+    {
+        path:'dasborad',
+        loadChildren:()=>import('./dasborad/productos/productos.module').then(m=>m.ProductosModule)
+        },
+    {
+        path:'login',component:LoginComponent
+    },
 
-{ path: '', redirectTo: '/menu', pathMatch: 'full' }
+    {
+    path:'',
+    loadChildren:()=>import('./templates/templates.module').then(m=>m.TemplatesModule)
+    },
+
+//{ path: '', redirectTo: '/menu', pathMatch: 'full' },
+
 
 
 ];
+

@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fondo suave para toda la página */
+    color: #495057; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #343a40; /* Color oscuro para encabezados */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para encabezados */
+}
+
+/* Portada */
+.container-fluid {
+    position: relative;
+    padding: 0;
+}
+
+.container-fluid img {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil alrededor de la imagen */
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+h3:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Descripción */
+.descripcion {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+}
+
+.descripcion p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Platillos */
+.fondo {
+    padding: 50px 0;
+}
+
+.fondo .row {
+    margin-bottom: 30px;
+}
+
+.imagen img {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra fuerte para las imágenes */
+}
+
+h1, h3 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.detall {
+    font-size: 1.1rem;
+    color: #6c757d; /* Color gris para los detalles */
+    margin-top: 20px;
+}
+
+.col h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Color azul para el título de los platillos */
+    margin-bottom: 20px;
+}
+
+.col h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtítulos de imágenes */
+.container p.fs-2 {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-muted {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+/* Imágenes de referencia */
+.row img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil para las imágenes */
+    transition: transform 0.3s ease-in-out;
+}
+
+.row img:hover {
+    transform: scale(1.05); /* Efecto de zoom para las imágenes */
+}
+
+@media (max-width: 768px) {
+    /* Diseño móvil */
+    .fondo .row {
+        flex-direction: column;
+    }
+
+    .imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1, h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .descripcion p {
+        font-size: 1rem;
+    }
+    .fondo h1 {
+        font-size: 2rem;
+    }
+    .row img {
+        max-width: 90%;
+    }
+}
